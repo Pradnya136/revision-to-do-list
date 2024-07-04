@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To_do_list</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="page" id="wrapper">
+            <div class="h1-wrap">   
+                <h2>To do List ! <img class="pen-img" src="assets/pen.png"/> </h2>
+                <h4 id="date"></h4>
+            </div>
+            <div class="input-wrap">
+                
+                <input id="inputBox" type="text" placeholder="Add task here.."/>
+                <button id="addBtn" onclick="addingTask()">Add</button>
+            </div>
+
+            <div id="display-result-box-wrap">
+                <ul id="ul">
+                    <!-- <li class="checked">list1</li>
+                    <li>list11</li>
+                    <li>list111</li> -->
+                </ul>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
