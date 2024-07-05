@@ -166,3 +166,22 @@ ul li {
     left: 0;
     text-decoration: underline  ;
 }
+ul li button{
+    position: absolute;
+    background: linear-gradient(to right, rgb(10, 67, 209),rgb(88, 152, 195));
+    color: aliceblue;
+    right: 40px;
+    top: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+   
+    padding: 5px;
+
+
+}
+ul li button:hover{
+    cursor: pointer;
+    cursor: alias;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}

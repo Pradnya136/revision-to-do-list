@@ -19,6 +19,11 @@ function addingTask(){
     span.innerHTML = "x";
     li.appendChild(span);
 
+    let edit_btn = document.createElement("button");
+    edit_btn.innerHTML = "Edit task";
+    li.appendChild(edit_btn)
+
+
    console.log(ul_element)
   }
   inputBox.value = "";
@@ -35,7 +40,17 @@ ul_element.addEventListener("click", function(e){
   }
   else if(e.target.tagName === "SPAN"){
     e.target.parentElement.remove();
-  }
+
+  }else if(e.target.tagName === "BUTTON" &&  e.target.classList.toggle("edit-btn")){
+    const listItem = e.target.parentElement;
+    const currentText = listItem.childNodes[0].textContent.trim();
+    const editedText = prompt('edit your text : ', currentText);
+    if(editedText){
+      listItem.childNodes[0].textContent = editedText;
+        }
+    
+    }
+  
   false;
 }
 )
